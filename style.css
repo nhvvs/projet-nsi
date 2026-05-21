@@ -1,0 +1,162 @@
+/* ----- RESET SIMPLE ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----- PAGE GLOBALE ----- */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+
+    /* --- IMAGE DE FOND --- */
+    background-image: url("image/fond.jpg"); /* chemin vers ton image */
+    background-size: cover;                   /* l’image couvre tout l’écran */
+    background-position: center;              /* centrée */
+    background-repeat: no-repeat;             /* pas de répétition */
+    background-attachment: fixed;             /* effet “parallaxe” */
+
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur de la page de garde */
+.page-garde {
+    width: 70%;
+    max-width: 900px;
+    min-height: 80vh;
+    background: rgba(10, 10, 20, 0.85); /* légèrement transparent pour voir l'image */
+    backdrop-filter: blur(3px);         /* flou derrière pour un effet propre */
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    border: 2px solid #f1c40f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ----- ENTÊTE ----- */
+.entete {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titre-principal {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #f1c40f;
+    text-shadow: 0 0 10px #e67e22;
+    letter-spacing: 2px;
+}
+
+.sous-titre {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ecf0f1;
+}
+
+/* ----- INFOS ----- */
+.infos {
+    margin: 20px 0;
+    padding: 20px 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(241, 196, 15, 0.4);
+}
+
+.info-ligne {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.label {
+    width: 130px;
+    font-weight: 700;
+    color: #f1c40f;
+}
+
+.valeur {
+    flex: 1;
+}
+
+/* ----- RÉSUMÉ ----- */
+.resume {
+    margin: 20px 0;
+    padding: 20px 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(236, 240, 241, 0.3);
+}
+
+.resume h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.resume p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* ----- PIED DE PAGE ----- */
+.pied-page {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #bdc3c7;
+}
+
+.pied-page .etablissement {
+    font-weight: 400;
+}
+
+.pied-page .date {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* ----- RESPONSIVE SIMPLE ----- */
+@media (max-width: 768px) {
+    .page-garde {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .titre-principal {
+        font-size: 2.3rem;
+    }
+
+    .info-ligne {
+        flex-direction: column;
+    }
+
+    .label {
+        width: auto;
+        margin-bottom: 3px;
+    }
+}
+.fleche-bas {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #f1c40f;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.fleche-bas:hover {
+    transform: translateX(-50%) scale(1.2);
+    color: #e67e22;
+}
+
