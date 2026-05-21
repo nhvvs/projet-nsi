@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 
     /* --- IMAGE DE FOND --- */
-    background-image: url("image/fond.jpg"); /* chemin vers ton image */
+    background-image: url("image/fond.webp"); /* chemin vers ton image */
     background-size: cover;                   /* l’image couvre tout l’écran */
     background-position: center;              /* centrée */
     background-repeat: no-repeat;             /* pas de répétition */
